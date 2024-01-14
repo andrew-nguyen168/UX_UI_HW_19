@@ -1,13 +1,22 @@
+/* Fonts */
+/* @font-face {
+    font-family: 'Philosopher';
+    src: url(font/Philosopher/Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family: 'Mulish';
+    src: url(font/Mulish/Mulish-Regular.ttf);
+} */
 body{
     margin: 0;
     padding: 0;
     /* Update font later */
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .title {
     width: 70%;
     margin: auto;
-    padding: 50px 10px;
+    padding: 10px 10px;
     font-size: 36px;
 }
 /*  Navigation  */
@@ -29,6 +38,7 @@ nav {
 nav li {
     padding: 20px;
     font-weight: bold;
+    font-size: 21px;
 }
 /*  Hero Section  */
 .heroSection {
@@ -74,6 +84,13 @@ button {
     margin: 50px 50px 30px 0px;
     font-size: 24px;
 }
+.aboutContainer b {
+    color: #489CEA;
+}
+.aboutContainer u {
+    color: #EA4848;
+    font-weight: bold;
+}
 .aboutContainer img {
     border-radius: 50px;
     margin: 10px;
@@ -83,11 +100,14 @@ button {
 }
 /*  My Skills Section  */
 .mySkills {
-    height: 90vh;
+    height: 800px;
+}
+.skillTitle {
+    color:#489CEA
 }
 .flexContainer {
     display: flex;
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 .skill {
@@ -100,7 +120,11 @@ button {
 }
 /*  My Work Section  */
 .myWork {
-    height: 50vh;
+    height: 100%;
+}
+.workGridContainer {
+    margin: 50px;
+    padding: 50px;
 }
 .workGrid {
     display: grid;
@@ -111,16 +135,16 @@ button {
     "ato ndis";
 }
 .projectContainer {
-    /* top > right > bottom > left */
-    width: 70%;
-    margin: auto;
-    /* margin: 20px 10px; */
-    padding: 20px 30px;
-    border:1px solid #b2b2b2;
-    border-radius: 30px;
+    padding: 0px 30px;
+    margin: 5px;
+}
+.projectTag {
+    color: #777777;
 }
 .projectContainer img {
-    height: 340px;
+    height: 420px;
+    width: 580px;
+    border: 1px solid;
 }
 #Enroute {
     grid-area: enroute;
@@ -134,22 +158,35 @@ button {
 #NDIS {
     grid-area: ndis;
 }
-
 /*  Footer  */
 footer {
     background-color: #373738;
-    padding-right: 10%;
     color: white;
-    font-weight: bold;
+    margin-top: 30px;
+    height: 200px;
+    display: flex;
+    padding: 0px 120px;
+    justify-content: space-between;
 }
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 45%;
+.footerWrapper div {
+    padding: 5px;
+}
+.footerContent img {
+    color: white;
+    height: 12px;
+    padding-right: 5px;
+}
+.socials img {
+    height: 44px;
+}
+/* footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 footer li {
-    padding: 3%;
-}
+    padding: 20px;
+} */
 
 /* Mobile Media Query */
 @media only screen and (max-width: 800px) {
@@ -158,7 +195,7 @@ footer li {
         grid-template-columns: 50%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "enroute"
+        "enroute"   
         "mindfulReader" 
         "ato"
         "ndis";
