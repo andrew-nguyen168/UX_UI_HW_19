@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* Update font later */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.title {
+    width: 70%;
+    margin: auto;
+    padding: 50px 10px;
+    font-size: 36px;
+}
+/*  Navigation  */
+.navigation {
+    border-bottom: 1px solid #B2B2B2;
+}
+.logo {
+    height: 100px;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+nav {
+    width: 92%;
+    padding: 1px;
+    text-align: right;
+}
+nav li {
+    padding: 20px;
+    font-weight: bold;
+}
+/*  Hero Section  */
+.heroSection {
+  height: 500px;
+  padding: 25px;
+  background-color: #F4F4F4;
+}
+.content {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+#introduction {
+    font-size: 50px;
+}
+#introduction a {
+    color: #EA4848;
+}
+#introduction u {
+    color: #489CEA;
+}
+.content p {
+    color: #757575;
+}
+button {
+    border-radius: 30px;
+    background-color: #80D1FF;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* About Me Section */
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    height: 500px;
+}
+.aboutContainer p {
+    margin: 50px 50px 30px 0px;
+    font-size: 24px;
+}
+.aboutContainer img {
+    border-radius: 50px;
+    margin: 10px;
+    padding: 30px;
+    height: 335px;
+    width: 335px;
+}
+/*  My Skills Section  */
+.mySkills {
+    height: 90vh;
+}
+.flexContainer {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+.skill {
+    width:33%;
+    margin: 20px 30px;
+    padding: 20px;
+}
+.mySkills img {
+    height: 100px;
+}
+/*  My Work Section  */
+.myWork {
+    height: 50vh;
+}
+.workGrid {
+    display: grid;
+    margin: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "enroute mindfulReader" 
+    "ato ndis";
+}
+.projectContainer {
+    /* top > right > bottom > left */
+    width: 70%;
+    margin: auto;
+    /* margin: 20px 10px; */
+    padding: 20px 30px;
+    border:1px solid #b2b2b2;
+    border-radius: 30px;
+}
+.projectContainer img {
+    height: 340px;
+}
+#Enroute {
+    grid-area: enroute;
+}
+#mindfulReader {
+    grid-area: mindfulReader;
+}
+#ATO {
+    grid-area: ato;
+}
+#NDIS {
+    grid-area: ndis;
+}
+
+/*  Footer  */
+footer {
+    background-color: #373738;
+    padding-right: 10%;
+    color: white;
+    font-weight: bold;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 45%;
+}
+footer li {
+    padding: 3%;
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 800px) {
+    .workGrid {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "enroute"
+        "mindfulReader" 
+        "ato"
+        "ndis";
+    }
+}
