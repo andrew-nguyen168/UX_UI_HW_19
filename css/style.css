@@ -10,7 +10,6 @@
 body{
     margin: 0;
     padding: 0;
-    /* Update font later */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .title {
@@ -37,7 +36,6 @@ nav {
 }
 nav li {
     padding: 20px;
-    font-weight: bold;
     font-size: 21px;
 }
 /*  Hero Section  */
