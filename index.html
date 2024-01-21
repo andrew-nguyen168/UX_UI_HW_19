@@ -8,7 +8,7 @@
         <!-- Navigation -->
         <header class="navigation">
             <div class="inline-block logo">
-                <img class="logo"src="images/AN-logo.png">
+                <img class="logo"src="images/AN-logo-black.png">
                 <!-- <p class="inline-block"> Andrew Nguyen</p> -->
             </div>
             <nav class="inline-block">
@@ -24,8 +24,8 @@
         <section class="heroSection">
             <div class="content">
                 <h1 id="introduction">
-                    Hi! I'm Andrew, a <span>UX/UI Designer</span>
-                    passionate about making <span>intuitive and seamless experiences.</span>
+                    Hi! I'm Andrew, a <span id="text-colour-blue">UX/UI Designer</span>
+                    passionate about making <span id="text-colour-red">intuitive</span> and <span id="text-colour-red">seamless</span> experiences.
                 </h1>
                 <p>Graduated from Monash University - Certificate of UX/UI Design</p>
                 <p>Graduated from RMIT University - Bachelor of Information Technology</p>
@@ -38,16 +38,16 @@
             <h1 class="title">About Me</h1>
             <div class="aboutContainer">
                 <div>
-                <p>I am an empathetic individual and a <sp  an>creative thinker</span> who is passionate about <span>curating an intuitive and 
-                    seamless experience</span> for all users, with a focus on <span>accessibility and minimal design.</span>
+                <p>I am an empathetic individual and a <span id="text-colour-red">creative thinker</span> who is passionate about <span id="text-colour-red">curating an intuitive and 
+                    seamless experience</span> for all users, with a focus on accessibility and minimal design.
                 </p>
                 <p>
                     With my background in IT, performing the role of an Analyst and Project Coordinator, I have developed valuable skills in 
-                    <span>analytical thinking</span> and <span>project management</span> to deliver complex projects. My experience will enable me to deliver profound 
+                    <span id="text-colour-blue">analytical thinking</span> and <span id="text-colour-blue">project management</span> to deliver complex projects. My experience will enable me to deliver profound 
                     projects and create positive changes in UX design.
                 </p>
                 </div>
-                <img src="images/profile-picture.jpg">
+                <img id="profile-picture" src="images/profile-picture.jpg">
             </div>
         </section>
         <!-- My Skills coded using CSS flex -->
@@ -109,13 +109,22 @@
                     <div id="Enroute" class="projectContainer">
                         <div class="zoom"><img class="inner-img" src="images/enroute.png"></div>
                         <h2>Enroute Travel App</h2>
-                        <p class="projectTag">UX Design / Case Study / Mobile Application</p>
+                        <div class="label-container">
+                            <div class="label" id="ux-design">UX Design</div>
+                            <div class="label" id="case-study">Case Study</div>
+                            <div class="label" id="mobile-app">Mobile App</div>
+                            <div class="label" id="desktop-app">Desktop App</div>
+                        </div>
                         <p>A travel planning solution that enables users to collaboratively and conveniently plan their itinerary with friends and family. </p>
                     </div>
                     <div id="mindfulReader" class="projectContainer">
                         <div class="zoom"><img class="inner-img" src="images/mindfulReader.png"></div>
                         <h2>Mindful Reader App</h2>
-                        <p class="projectTag">UX Design / Case Study / Mobile Application</p>
+                        <div class="label-container">
+                            <div class="label" id="ux-design">UX Design</div>
+                            <div class="label" id="case-study">Case Study</div>
+                            <div class="label" id="mobile-app">Mobile App</div>
+                        </div>
                         <p>A habit tracking app that allows users to build a long-term reading and journaling routine that also aids in 
                             memorising information from books that they’ve read.
                         </p>
@@ -123,13 +132,23 @@
                     <div id="ATO" class="projectContainer">
                         <div class="zoom"><img class="inner-img" src="images/ato.png"></div>
                         <h2>Australian Taxation Office Redesign</h2>
-                        <p  class="projectTag">UX Design / UI Design / Desktop & Mobile Application</p>
+                        <div class="label-container">
+                            <div class="label" id="ux-design">UX Design</div>
+                            <div class="label" id="ui-design">UI Design</div>
+                            <div class="label" id="mobile-app">Mobile App</div>
+                            <div class="label" id="desktop-app">Desktop App</div>
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur. Nisl at eget vulputate tellus habitasse ornare ridiculus.</p>
                     </div>
                     <div id="NDIS" class="projectContainer">
                         <div class="zoom"><img class="inner-img" src="images/ndis.png"></div>
                         <h2>ACTS3 NDIS Support Service Redesign</h2>
-                        <p class="projectTag">UX Design / Case Study / Desktop & Mobile Application</p>
+                        <div class="label-container">
+                            <div class="label" id="ux-design">UX Design</div>
+                            <div class="label" id="ui-design">UI Design</div>
+                            <div class="label" id="mobile-app">Mobile App</div>
+                            <div class="label" id="desktop-app">Desktop App</div>
+                        </div>
                         <p>A redesign of a community mental health service provider with an improved information architecture, 
                             credibility of the organisation, and accessibility to include all users.
                         </p>
@@ -139,17 +158,26 @@
         </section>
         <!-- Footer -->
         <footer>
-            <div class="footerWrapper">
-                <h2>Nice to see you here!</h2>
-                <div class="footerContent">
-                    <u>andrew.nguyen168@outlook.com</u>
+            <div class="footer-container">
+                <div class="footer-container-left">
+                    <!-- img -->
+                    <img src="images/AN-logo-white.png"> 
+                    <!-- Sub-text -->
+                    <p>© 2024 Andrew Nguyen.</p>
                 </div>
-                <div>© 2024 Andrew Nguyen.</div>
-                <div class="socials">
-                    <div>LinkedIn</div>
-                    <div>Instagram</div>
+                <!-- Add a line here -->
+                <div class="footer-container-right">
+                    <!-- Name -->
+                    <h4>Andrew Nguyen</h4>
+                    <!-- Sub-text -->
+                    <p>UX/UI Designer | Melbourne, Australia</p>
+                    <!-- Social media -->
+                    <div class="social-media-container">
+                        <img class="social-media" src="icons/instagram.svg">
+                        <img class="social-media" src="icons/linkedin.svg">
+                    </div>
+                    <button id="toTop">Back to top</button>
                 </div>
-                <div class="buttonContainer"><button id="toTop">Back to top</button></div>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

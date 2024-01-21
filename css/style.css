@@ -8,19 +8,23 @@
     src: url(font/Mulish/Mulish-Regular.ttf);
 } */
 /* Elements */
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Philosopher';
     
 }
 .title {
+    font-family: 'Mulish';
     width: 70%;
     margin: auto;
-    margin-top: 50px;
+    margin-bottom: 5px;
     padding: 10px 10px;
-    font-size: 40px;
-    /* background-color: red; */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    letter-spacing: -0.684px;
 }
 /*  Navigation  */
 .navigation {
@@ -67,7 +71,7 @@ nav a:hover::before {
 
 /*  Hero Section  */
 .heroSection {
-  height: 500px;
+  height: 577px;
   padding: 25px;
   background-color: #F4F4F4;
 }
@@ -78,12 +82,11 @@ nav a:hover::before {
 }
 #introduction {
     font-size: 50px;
-}
-#introduction a {
-    color: #EA4848;
-}
-#introduction u {
-    color: #489CEA;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.95px;
 }
 span {
     background-image: linear-gradient(#ffd900, #ffd900);
@@ -91,6 +94,14 @@ span {
 	background-position: 0% 100%;
 	background-size: 100% 2px;
 	transition: background-size .5s, background-position .3s ease-in .5s;
+}
+#text-colour-blue {
+    color: #489CEA;
+    font-weight: bold;
+}
+#text-colour-red {
+    color: #EA4848;
+    font-weight: bold;
 }
 span:hover {
 	background-size: 100% 100%;
@@ -101,6 +112,10 @@ span:hover {
 }
 .content p {
     color: #757575;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 150%; /* 31.5px */
+    letter-spacing: -0.399px;
 }
 button {
     display: inline-block;
@@ -113,60 +128,75 @@ button {
 }
 /* About Me Section */
 .aboutSection {
-    border: 1px solid;
+    height: 100%;
+    padding: 30px 0px;
+    margin: 50px 0px;
 }
 .aboutContainer {
     display: flex;
     flex-direction: row;
     width: 70%;
     margin: auto;
-    padding: 20px;
-    height: 500px;
 }
 .aboutContainer p {
-    margin: 50px 50px 0px 0px;
+    margin: 10px 50px 0px 0px;
     font-size: 24px;
+    padding-right: 160px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.456px;
 }
-.aboutContainer b {
-    color: #489CEA;
-}
-.aboutContainer u {
-    color: #EA4848;
-    font-weight: bold;
-}
-.aboutContainer img {
-    border-radius: 50px;
-    margin: 10px;
-    padding: 30px;
+#profile-picture {
     height: 335px;
+    border-radius: 30px;
     width: 335px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /*  My Skills Section  */
 .mySkills {
-    height: 800px;
+    height: 100%;
+    margin: 50px 0px;
 }
 .skillTitle {
-    color:#489CEA
+    color:#489CEA;
+    font-family: 'Mulish';
+    font-size: 24px;
 }
 .flexContainer {
     display: flex;
     width: 70%;
     margin: auto;
+    justify-content: center;
 }
 .skill {
-    width: 80%;
-    margin: 50px 100px 0px 0px;
+    background-color: #f5f5f5;
+    width: 50%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Philosopher';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.304px;
+}
+.skill p {
+    font-size: 16px;
 }
 .mySkills img {
-    height: 100px;
+    height: 126px;
+    width: 126px;
 }
 /*  My Work Section  */
 .myWork {
     height: 100%;
 }
 .workGridContainer {
-    margin: 20px 50px;
-    padding: 20px;
+    margin: 20px 250px;
 }
 .workGrid {
     display: grid;
@@ -177,20 +207,33 @@ button {
     "ato ndis";
 }
 .projectContainer {
+    background-color: #f5f5f5;
     padding: 0px 30px;
     margin: 30px;
     padding: 30px;
-    border: 1px solid;
     border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+}
+.projectContainer h2 {
+    color: black;
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
+}
+.projectContainer p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.304px;
 }
 .projectTag {
     color: #777777;
 }
 .projectContainer img {
-    height: 300px;
-    width: 400px;
     text-align: center;
     height: 420px;
     width: 580px;
@@ -209,40 +252,70 @@ button {
 }
 .zoom {
     overflow: hidden;
-    border: 1px solid;
 }
 .inner-img { 
     transition: 0.3s;
 }
 .inner-img:hover {
     transform: scale(1.1);
-    
+}
+/* Labels */
+.label-container {
+    display: flex;
+    flex-direction: row;
+}
+.label {
+    color: white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+#ux-design {
+    background-color: #2A9D8F;
+}
+#case-study {
+    background-color: #EA4848;
+}
+#mobile-app {
+    background-color: #F4A261;
+}
+#desktop-app {
+    background-color: #E76F51;
+}
+#ui-design  {
+    background-color:#489CEA;
 }
 /*  Footer  */
 footer {
     background-color: #373738;
     color: white;
     display: flex;
-    justify-content: space-between;
 }
-.footerWrapper {
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-}
-.socials {
+.footer-container {
     display: flex;
 }
-.socials div {
-    padding-right: 5px;
+.footer-container-left img {
+    height: 165px;
+    margin-right: 20px;
 }
-.footerContent img {
-    color: white;
-    height: 12px;
-    padding-right: 5px;
+.footer-container-right h4 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0px;
 }
-.socials img {
-    height: 44px;
+.footer-container-right p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.176px;
+    margin: 10px 0px;
+}
+
+.social-media {
+    height: 26px;
+    width: 26px;
+    margin: 10px 10px 0px 0px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(102%);
 }
 /* Mobile Media Query */
 @media only screen and (max-width: 800px) {
