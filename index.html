@@ -13,10 +13,10 @@
             </div>
             <nav class="inline-block">
                 <ul>
-                    <li class="inline-block">About</li>
-                    <li class="inline-block">Skills</li>
-                    <li class="inline-block">Work</li>
-                    <li class="inline-block">Contact</li>
+                    <li class="inline-block" id="about"><a href="#">About</a></li>
+                    <li class="inline-block" id="skills"><a href="#">Skills</a></li>
+                    <li class="inline-block" id="work"><a href="#">Work</a></li>
+                    <li class="inline-block" id="contact"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,8 +24,8 @@
         <section class="heroSection">
             <div class="content">
                 <h1 id="introduction">
-                    Hi! I'm Andrew, a <a>UX/UI Designer</a> 
-                    passionate about making <a>intuitive</a> and <a>seamless</a> experiences.
+                    Hi! I'm Andrew, a <span>UX/UI Designer</span>
+                    passionate about making <span>intuitive and seamless experiences.</span>
                 </h1>
                 <p>Graduated from Monash University - Certificate of UX/UI Design</p>
                 <p>Graduated from RMIT University - Bachelor of Information Technology</p>
@@ -38,12 +38,12 @@
             <h1 class="title">About Me</h1>
             <div class="aboutContainer">
                 <div>
-                <p>I am an <b>empathetic individual</b> and a <b>creative thinker</b> who is passionate about <u>curating an intuitive and 
-                    seamless experience</u> for all users, with a focus on accessibility and minimal design.
+                <p>I am an empathetic individual and a <sp  an>creative thinker</span> who is passionate about <span>curating an intuitive and 
+                    seamless experience</span> for all users, with a focus on <span>accessibility and minimal design.</span>
                 </p>
                 <p>
                     With my background in IT, performing the role of an Analyst and Project Coordinator, I have developed valuable skills in 
-                    <b>analytical thinking</b> and <b>project management</b> to deliver complex projects. My experience will enable me to deliver profound 
+                    <span>analytical thinking</span> and <span>project management</span> to deliver complex projects. My experience will enable me to deliver profound 
                     projects and create positive changes in UX design.
                 </p>
                 </div>
@@ -107,13 +107,13 @@
             <div class="workGridContainer">
                 <div class="workGrid">
                     <div id="Enroute" class="projectContainer">
-                        <img src="images/enroute.png">
+                        <div class="zoom"><img class="inner-img" src="images/enroute.png"></div>
                         <h2>Enroute Travel App</h2>
                         <p class="projectTag">UX Design / Case Study / Mobile Application</p>
                         <p>A travel planning solution that enables users to collaboratively and conveniently plan their itinerary with friends and family. </p>
                     </div>
                     <div id="mindfulReader" class="projectContainer">
-                        <img src="images/mindfulReader.png">
+                        <div class="zoom"><img class="inner-img" src="images/mindfulReader.png"></div>
                         <h2>Mindful Reader App</h2>
                         <p class="projectTag">UX Design / Case Study / Mobile Application</p>
                         <p>A habit tracking app that allows users to build a long-term reading and journaling routine that also aids in 
@@ -121,13 +121,13 @@
                         </p>
                     </div>
                     <div id="ATO" class="projectContainer">
-                        <img src="images/ato.png">
+                        <div class="zoom"><img class="inner-img" src="images/ato.png"></div>
                         <h2>Australian Taxation Office Redesign</h2>
                         <p  class="projectTag">UX Design / UI Design / Desktop & Mobile Application</p>
                         <p>Lorem ipsum dolor sit amet consectetur. Nisl at eget vulputate tellus habitasse ornare ridiculus.</p>
                     </div>
                     <div id="NDIS" class="projectContainer">
-                        <img src="images/ndis.png">
+                        <div class="zoom"><img class="inner-img" src="images/ndis.png"></div>
                         <h2>ACTS3 NDIS Support Service Redesign</h2>
                         <p class="projectTag">UX Design / Case Study / Desktop & Mobile Application</p>
                         <p>A redesign of a community mental health service provider with an improved information architecture, 
@@ -171,6 +171,7 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="/path/to/jquery.jqZoom.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
