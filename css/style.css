@@ -1,12 +1,13 @@
 /* Fonts */
-/* @font-face {
+@font-face {
     font-family: 'Philosopher';
-    src: url(font/Philosopher/Philosopher-Regular.ttf);
+    src: url(../font/Philosopher/Philosopher-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Mulish';
-    src: url(font/Mulish/Mulish-Regular.ttf);
-} */
+    src: url(../font/Mulish/Mulish-Regular.ttf);
+}
 /* Elements */
 body {
     margin: 0;
@@ -165,6 +166,7 @@ button {
 }
 .flexContainer {
     display: flex;
+    flex-direction: row;
     width: 70%;
     margin: auto;
     justify-content: center;
@@ -321,12 +323,16 @@ footer {
 @media only screen and (max-width: 800px) {
     .workGrid {
         display: grid;
-        grid-template-columns: 50%;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "enroute"   
         "mindfulReader" 
         "ato"
         "ndis";
+    }
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
     }
 }
